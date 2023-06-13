@@ -1,13 +1,23 @@
 <?php
 /*
 *
-* Plugin Name: Custom Routes and Endpoint 
-* Description: Custom the return of your API.
-* Version: 0.0.1
-* Author : Sarah Siqueira
-* Requires: 4.7
+* Plugin Name:       Custom Routes and Endpoint 
+* Description:       Custom the return of your API.
+* Plugin URI:        https://sarahjobs.com/wordpress/plugins/custom-routes-endpoints
+* Description:       Custom the return of your API.
+* Version:           1.0.0
+* Requires at least: 4.7
+* Requires PHP:      7.4
+* Author:            Sarah Siqueira
+* Author URI:        https://sarahjobs.com/about
+* License:           GPLv2 or later
+* License URI:       https://www.gnu.org/licenses/gpl.html
+* Text Domain:       custom-endpoint
+* Domain Path:       /languages
+* Update URI:        https://sarahjobs.com/wordpress/plugins/custom-routes-endpoints/update
 *
 */
+
 add_action('rest_api_init', 'custom_endpoint');
 
 function custom_endpoint()
