@@ -18,6 +18,9 @@
 
 add_action( 'rest_api_init', 'custom_endpoint' );
 
+/**
+ * Customize endpoint
+ * */
 function custom_endpoint() {
 	register_rest_route(
 		'mynamespace/v1',
@@ -28,7 +31,9 @@ function custom_endpoint() {
 		)
 	);
 }
-
+/**
+ * Callback for endpoint
+ */
 function custom_endpoint_callback() {
 	$data = array();
 
